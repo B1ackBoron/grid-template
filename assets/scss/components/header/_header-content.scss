@@ -5,17 +5,17 @@
   position: relative;
   z-index: 1;
   &__container {
-   @extend %container;
-      }
+    @extend %container;
+  }
 
   &__title {
-  margin: 0 0 53px 0;
-  
-}
-
-&__actions {
-  display: flex;
-  justify-content: center;
-  gap: $gap;
-}
+    margin: 0 0 53px 0;
   }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+
+    gap: $gap;
+  }
+}
