@@ -13,6 +13,13 @@
     letter-spacing: 0.1em;
     font-size: 1.25rem;
     @include abs-position;
+    
+    @include md-min {
+      font-size: 1.25rem;
+    }
+    @include md {
+      font-size: 1.125rem;
+    }
   }
 
   &__link {
