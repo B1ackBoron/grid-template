@@ -9,9 +9,9 @@
 
   &__title {
     z-index: 1;
-
     margin: 0;
-
+    letter-spacing: 0.1em;
+    font-size: 1.25rem;
     @include abs-position;
   }
 
