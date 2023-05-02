@@ -69,21 +69,19 @@
     }
     @include md {
       display: none;
-@include unlist;
-    }
-
-    gap: $gap;
-    grid-template-columns: repeat(auto-fit, minmax(40px, max-content));
-
-    &.-active {
-      display: block;
       position: absolute;
       top: 100%;
       right: $gap;
       text-align: right;
       background-color: rgba($color-gray-dark, 0.9);
       @include box-shadow;
+@include unlist;
     }
+
+    gap: $gap;
+    grid-template-columns: repeat(auto-fit, minmax(40px, max-content));
+
+
   }
 
 &__item {
