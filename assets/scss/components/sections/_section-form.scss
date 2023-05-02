@@ -54,7 +54,10 @@
     color: $color-white;
     letter-spacing: 0.1em;
     font-size: 1.125rem;
-        font-family: $font-main;
+    font-family: $font-main;
+    @include lg-md {
+      min-height: 60px;
+    }
     }
     .form .btn--light:hover, .btn--light:focus {
       border-color: $color-white;
