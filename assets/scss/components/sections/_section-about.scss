@@ -4,11 +4,15 @@
 
 .about {
   background-color: $color-gray-light;
-  color: $color-white;
   padding: 100px 0;
-  position: relative;
+  // position: relative;
   letter-spacing: 0.055em;
-  
+
+  @include lg-md {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
   &__container {
     display: grid;
     grid-template-columns: 1fr 271px;
@@ -18,7 +22,15 @@
     max-width: 1340px;
     padding-left: 20px;
     padding-right: 20px;
-    
+
+    @include lg-min {
+      gap: 100px;
+          }
+
+    @include lg-md {
+      gap: 40px;
+          }
+
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
     }
@@ -31,15 +43,10 @@
   &__content {
     width: 100%;
     margin: 0;
-    padding-right: 50px;
+    // padding-right: 50px;
     h2 {
-      font-size: 2.5rem;
-      margin-bottom: 3rem;
+
       margin-top: 0;
-      letter-spacing: 0.1em;
-      line-height: 1.2em;
-      color: $color-primary;
-      font-family: $font-header;
     }
 
     p {
@@ -47,6 +54,9 @@
       // margin-bottom: 24px;
       color: $color-gray;
       font-family: $font-main;
+      @include lg-md {
+        font-size: 1rem;
+      }
     }
 
     p:first-of-type {
@@ -62,6 +72,10 @@
         width: 2px;
         background-color: rgba(99, 117, 136, 0.1);
         content: "";
+
+        @include lg-md {
+          right: -20px;
+        }
       }
     }
     p:last-of-type {

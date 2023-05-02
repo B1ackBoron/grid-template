@@ -6,7 +6,7 @@
 .form {
   background-color: $color-primary;
   padding: 30px 0;
-  
+
    &__container {
     display: grid;
     gap: 20px;
@@ -38,7 +38,7 @@
         }
 
       }
-    
+
     .form-item__input:hover,
 .form-item__input:focus {
   border-bottom-color: $color-white;
@@ -50,7 +50,7 @@
     .form .btn--light {
      width: 100%;
      border: 2px solid rgba( 255, 255, 255, 0);
-    border-bottom-color: rgba( 255, 255, 255, 0.25);
+    border-bottom-color: rgba( 255, 255, 255, 0.2);
     color: $color-white;
     letter-spacing: 0.1em;
     font-size: 1.125rem;
@@ -61,5 +61,5 @@
       transition: 0.5s;
       cursor: pointer;
     }
-  
+
 

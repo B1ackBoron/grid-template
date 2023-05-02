@@ -199,6 +199,18 @@ h1 {
   line-height: 1.2em;
 }
 
+h2 {
+  margin-bottom: 3rem;
+
+  letter-spacing: 0.1em;
+
+  color: #2d3651;
+
+  font-family: "Roboto Slab", serif;
+  font-size: 2.5rem;
+  line-height: 1.2em;
+}
+
 a {
   text-decoration: none;
 
@@ -586,13 +598,10 @@ a {
 }
 
 .about {
-  position: relative;
-
   padding: 100px 0;
 
   letter-spacing: 0.055em;
 
-  color: #ffffff;
   background-color: #e5e5e5;
 }
 .about__container {
@@ -615,19 +624,9 @@ a {
 .about__content {
   width: 100%;
   margin: 0;
-  padding-right: 50px;
 }
 .about__content h2 {
   margin-top: 0;
-  margin-bottom: 3rem;
-
-  letter-spacing: 0.1em;
-
-  color: #2d3651;
-
-  font-family: "Roboto Slab", serif;
-  font-size: 2.5rem;
-  line-height: 1.2em;
 }
 .about__content p {
   color: #637588;
@@ -739,7 +738,7 @@ a {
 
   color: #ffffff;
   border: 2px solid rgba(255, 255, 255, 0);
-  border-bottom-color: rgba(255, 255, 255, 0.25);
+  border-bottom-color: rgba(255, 255, 255, 0.2);
 
   font-family: "Roboto", sans-serif;
   font-size: 1.125rem;
@@ -1047,19 +1046,43 @@ a {
     grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
     grid-template-columns: repeat(4, 1fr);
   }
+  .about__container {
+    gap: 100px;
+  }
 }
 
 @media (max-width: 991.8px) and (min-width: 768px) {
   h1 {
     font-size: 2.5rem;
   }
+  h2 {
+    margin-bottom: 2.65rem;
+
+    font-size: 2rem;
+  }
   .btn--light {
     min-width: 200px;
-    min-height: 50px;
+    min-height: 60px;
+  }
+  .header-content__title {
+    margin: 0 0 43px 0;
   }
   .skills__container {
     grid-template-areas: "a1 a1 a2" "a3 a4 a4" "a5 a5 a6" "a7 a8 a6" "a7 a9 a9";
     grid-template-columns: repeat(3, 1fr);
+  }
+  .about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .about__container {
+    gap: 40px;
+  }
+  .about__content p {
+    font-size: 1rem;
+  }
+  .about__content p:first-of-type::after {
+    right: -20px;
   }
 }
 
