@@ -40,7 +40,6 @@
         top: 18px;
         transform-origin: left center;
       }
-
     }
 
     &.-active span {
@@ -75,31 +74,29 @@
       text-align: right;
       background-color: rgba($color-gray-dark, 0.9);
       @include box-shadow;
-@include unlist;
+      @include unlist;
     }
 
     gap: $gap;
     grid-template-columns: repeat(auto-fit, minmax(40px, max-content));
-
-
   }
 
-&__item {
-  @include md {
-  margin: $gap $gap-sm;
-}
-}
+  &__item {
+    @include md {
+      margin: $gap $gap-sm;
+    }
+  }
 
   &__link {
     display: block;
 
-@include md-min {
-  padding: $gap $gap-sm;
-}
+    @include md-min {
+      padding: $gap $gap-sm;
+    }
 
-@include md {
-  padding: $gap-sm $gap;
-}
+    @include md {
+      padding: $gap-sm $gap;
+    }
     letter-spacing: 0.1em;
 
     font-size: 1.125rem;
@@ -110,5 +107,3 @@
     }
   }
 }
-
-

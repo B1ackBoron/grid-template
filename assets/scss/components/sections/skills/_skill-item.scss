@@ -6,14 +6,13 @@
 
   overflow: hidden;
 
-
   &__title {
     z-index: 1;
     margin: 0;
     letter-spacing: 0.1em;
     font-size: 1.25rem;
     @include abs-position;
-    
+
     @include md-min {
       font-size: 1.25rem;
     }
