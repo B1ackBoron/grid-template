@@ -55,6 +55,15 @@ h2 {
     margin-bottom: 2.625rem;
     font-size: 2rem;
   }
+  @include md-sm {
+    margin-bottom: 2.25rem;
+    font-size: 1.5rem;
+  }
+  @include sm {
+    margin-bottom: 2.25rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
 }
 
 a {

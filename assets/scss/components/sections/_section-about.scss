@@ -13,9 +13,13 @@
     padding-bottom: 80px;
   }
 
+  @include md {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   &__container {
     display: grid;
-    grid-template-columns: 1fr 271px;
     grid-gap: 50px;
     align-items: center;
     margin: auto;
@@ -23,19 +27,25 @@
     padding-left: 20px;
     padding-right: 20px;
 
+
     @include lg-min {
       gap: 100px;
+      grid-template-columns: 1fr 271px;
           }
 
     @include lg-md {
       gap: 40px;
           }
+          @include md-sm {
+            gap: 20px;
+            grid-template-columns: 1fr 236px;
+          }
+          @include sm {
+            gap: 20px;
+            grid-template-columns: 1fr;
+          }
 
-    @media (max-width: 768px) {
-      grid-template-columns: 1fr;
-    }
-
-    // & > * {
+     // & > * {
     //   margin: 0;
     // }
   }
@@ -60,6 +70,12 @@
             @include lg-md {
         font-size: 1rem;
       }
+      @include md-sm {
+        font-size: 1rem;
+      }
+      @include sm {
+        font-size: 1rem;
+      }
     }
 
     p:first-of-type {
@@ -78,6 +94,9 @@
 
         @include lg-md {
           right: -20px;
+        }
+        @include md-sm {
+          right: -10px;
         }
       }
     }

@@ -10,11 +10,26 @@
    &__container {
     display: grid;
     gap: 20px;
-    grid-template-columns:repeat(3, 1fr);
-    margin: auto;
+        margin: auto;
     max-width: 1340px;
     padding-left: 20px;
-    padding-right: 20px;}}
+    padding-right: 20px;
+
+    @include md-min {
+      grid-template-columns:repeat(3, 1fr);
+    }
+
+    @include md-sm {
+      grid-template-columns: repeat(2, 1fr);
+    }}
+
+    &-item:nth-of-type(1) {
+      @include md-sm {
+      grid-column: 1/span 2;
+      }
+    }
+
+  }
 
     .form-item__input {
       width: 100%;
@@ -56,6 +71,12 @@
     font-size: 1.125rem;
     font-family: $font-main;
     @include lg-md {
+      min-height: 60px;
+    }
+    @include md-sm {
+      min-height: 60px;
+    }
+    @include sm {
       min-height: 60px;
     }
     }
