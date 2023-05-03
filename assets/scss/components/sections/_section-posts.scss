@@ -10,7 +10,6 @@
     padding-top: $gap-x4;
     padding-bottom: $gap-x4;
   }
-
   @include md {
     padding-top: $gap-x3;
     padding-bottom: $gap-x3;
@@ -45,16 +44,16 @@
 
 .posts__grid {
   display: grid;
-  gap: $gap;
+
   padding-bottom: $gap;
+
+  gap: $gap;
   grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
   grid-template-columns: repeat(4, 1fr);
-
   @include lg-md {
     grid-template-areas: "p1 p1 p2" "p3 p4 p4" "p5 p5 p6";
     grid-template-columns: repeat(3, 1fr);
   }
-
   @include md-sm {
     grid-template-areas: "p1 p2" "p3 p4" "p5 p6";
     grid-template-columns: 1fr 1fr;
@@ -66,8 +65,9 @@
 }
 
 .post-item {
-  background-color: rgba($color-gray-light, 0.5);
   transition: 0.5s;
+
+  background-color: rgba($color-gray-light, 0.5);
 }
 
 .post-item:hover,
@@ -78,7 +78,9 @@
 .post-item__link {
   display: grid;
   overflow: hidden;
+
   height: 100%;
+
   grid-template-rows: 300px 1fr;
 }
 
@@ -86,13 +88,16 @@
   display: flex;
   overflow: hidden;
   justify-content: center;
+
   background-color: $color-primary;
 }
 
 .post-item__image img {
   width: 100%;
-  object-fit: cover;
+
   transition: 0.5s;
+
+  object-fit: cover;
 }
 
 .post-item:hover .post-item__image img {
@@ -102,16 +107,19 @@
 .post-item__caption {
   display: grid;
   align-content: center;
+
   padding: $gap;
 }
 
 .post-item h3 {
-  letter-spacing: 0.05em;
-  color: $color-gray;
-  font-size: 1.125rem;
   transition: 0.5s;
   text-align: center;
+  letter-spacing: 0.05em;
+
+  color: $color-gray;
+
   font-family: $font-header;
+  font-size: 1.125rem;
 }
 
 .post-item:hover h3,
@@ -124,13 +132,14 @@
 }
 
 .post-item p {
-  text-align: center;
   transition: 0.5s;
+  text-align: center;
 }
 
 .posts__actions {
   display: flex;
   justify-content: center;
+
   min-width: 350px;
 }
 

@@ -3,7 +3,9 @@
 
 .footer {
   padding: ($gap-x2 + $gap-sm) $gap ($gap-x3 + $gap-sm);
+
   text-align: center;
+
   background-color: $color-primary;
 }
 
@@ -13,9 +15,12 @@
 
 .footer__social {
   position: relative;
+
   display: grid;
   justify-content: center;
+
   margin-bottom: $gap-x2;
+
   grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
 }
 
@@ -23,15 +28,20 @@
   position: absolute;
   bottom: -$gap;
   left: calc(50% - 37.5px);
+
   width: 75px;
   height: 2px;
+
   content: "";
+
   background-color: rgba($color-white, 0.1);
 }
 
 .footer__social a {
   display: block;
+
   padding: $gap-sm;
+
   transition: 0.5s;
 }
 
