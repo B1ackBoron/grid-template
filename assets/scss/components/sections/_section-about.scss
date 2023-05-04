@@ -80,6 +80,9 @@
 
         background-color: rgba(99, 117, 136, 0.1);
 
+        @include sm {
+          display: none;
+        }
         @include lg-md {
           right: -$gap;
         }

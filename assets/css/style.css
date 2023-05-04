@@ -484,10 +484,6 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
 }
-
-.skills__actions .btn--primary {
-  min-width: 350px;
-}
 .skill-item {
   position: relative;
 
@@ -684,6 +680,7 @@ a {
   color: #ffffff;
   border: 2px solid rgba(255, 255, 255, 0);
   border-bottom-color: rgba(255, 255, 255, 0.25);
+  outline: none;
   background-color: rgba(255, 255, 255, 0.05);
 
   font-family: "Roboto", sans-serif;
@@ -716,6 +713,31 @@ a {
   border-color: rgba(255, 255, 255, 0.15);
   border-bottom-color: #ffffff;
   background-color: rgba(255, 255, 255, 0.15);
+}
+
+.form-item__input:hover::-webkit-input-placeholder,
+.form-item__input:focus::-webkit-input-placeholder {
+  color: #8c9bab;
+}
+
+.form-item__input:hover::-moz-placeholder,
+.form-item__input:focus::-moz-placeholder {
+  color: #8c9bab;
+}
+
+.form-item__input:hover:-ms-input-placeholder,
+.form-item__input:focus:-ms-input-placeholder {
+  color: #8c9bab;
+}
+
+.form-item__input:hover::-ms-input-placeholder,
+.form-item__input:focus::-ms-input-placeholder {
+  color: #8c9bab;
+}
+
+.form-item__input:hover::placeholder,
+.form-item__input:focus::placeholder {
+  color: #8c9bab;
 }
 
 .form .btn--light {
@@ -880,12 +902,6 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-
-  min-width: 350px;
-}
-
-.posts__actions .btn--primary {
-  min-width: 350px;
 }
 
 .footer {
@@ -970,6 +986,12 @@ a {
   }
   .skills__actions {
     margin-bottom: 30px;
+  }
+  .skills__actions .btn--primary {
+    min-width: 350px;
+  }
+  .posts__actions .btn--primary {
+    min-width: 350px;
   }
 }
 
@@ -1182,6 +1204,9 @@ a {
     grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
     grid-template-columns: 1fr;
   }
+  .skills__actions .btn--primary {
+    width: 100%;
+  }
   .about__container {
     gap: 20px;
     grid-template-columns: 1fr;
@@ -1189,8 +1214,14 @@ a {
   .about__content p {
     font-size: 1rem;
   }
+  .about__content p:first-of-type::after {
+    display: none;
+  }
   .posts__grid {
     grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";
     grid-template-columns: 1fr;
+  }
+  .posts__actions .btn--primary {
+    width: 100%;
   }
 }

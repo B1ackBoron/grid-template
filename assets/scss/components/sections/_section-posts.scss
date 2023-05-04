@@ -140,9 +140,14 @@
   display: flex;
   justify-content: center;
 
-  min-width: 350px;
+  // min-width: 350px;
 }
 
 .posts__actions .btn--primary {
-  min-width: 350px;
+  @include sm-min {
+    min-width: 350px;
+  }
+  @include sm {
+    width: 100%;
+  }
 }
